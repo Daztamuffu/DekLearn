@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DekLearn</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<button onclick="rotateAndGo()" class="logo-btn">
+  <div class="circle-icon" id="logo-icon">
+    <img src="../image/Logo.png" alt="Logo" />
+  </div>
+</button>
+
+  <div class="navbar">
+    <div class="navbar-left">
+      <button onclick="window.location.href='login.php'" class="login-btn">เข้าสู่ระบบ</button>
+      <a href="register.html" class="create-account">สร้างบัญชี</a>
+    </div>
+    <div class="navbar-right">
+      <a href="main.html" class="menu">หน้าหลัก</a>
+      <div class="separator">|</div>
+      <a href="topup.html" class="menu">เติมเงิน</a>
+      <div class="separator">|</div>
+      <a href="contact.html" class="menu">ติดต่อเรา</a>
+      <div class="separator">|</div>
+      <a href="about.html" class="menu">เกี่ยวกับเรา</a>
+    </div>
+  </div>
+
+  <div class="center-circle-container">
+    <button class="half-circle left-btn">
+      <span class="btn-text">สรุปซิท</span>
+    </button>
+    <button class="half-circle right-btn">
+      <span class="btn-text">ติวเตอร์</span>
+    </button>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
