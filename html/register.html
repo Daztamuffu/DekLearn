@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DekLearn</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/resister.css" />
+</head>
+<body>
+
+  <button onclick="rotateAndGo()" class="logo-btn">
+    <div class="circle-icon" id="logo-icon">
+      <img src="../image/Logo.png" alt="Logo" />
+    </div>
+  </button>
+
+  <div class="navbar">
+    <div class="navbar-left">
+      <button onclick="window.location.href='login.php'" class="login-btn">เข้าสู่ระบบ</button>
+      <a href="register.html" class="create-account">สร้างบัญชี</a>
+    </div>
+    <div class="navbar-right">
+      <a href="main.html" class="menu">หน้าหลัก</a>
+      <div class="separator">|</div>
+      <a href="topup.html" class="menu">เติมเงิน</a>
+      <div class="separator">|</div>
+      <a href="contact.html" class="menu">ติดต่อเรา</a>
+      <div class="separator">|</div>
+      <a href="about.html" class="menu">เกี่ยวกับเรา</a>
+    </div>
+  </div>
+
+<div class="center-circle-container">
+    <button class="half-circle left-btn">
+      <span class="btn-text">สรุปซิท</span>
+    </button>
+    <button class="half-circle right-btn">
+      <span class="btn-text">ติวเตอร์</span>
+    </button>
+  </div>
+
+  <div class="login-container">
+    <h2>สมัครสมาชิก</h2>
+    <form class="login-form">
+      <label for="username">ชื่อผู้ใช้</label>
+      <input type="text" id="username" name="username" placeholder="ตั้งชื่อผู้ใช้" required />
+
+      <label for="email">อีเมล</label>
+      <input type="email" id="email" name="email" placeholder="กรอกอีเมลของคุณ" required />
+
+      <label for="password">รหัสผ่าน</label>
+      <input type="password" id="password" name="password" placeholder="ตั้งรหัสผ่าน" required />
+
+      <button type="submit" class="submit-btn">สมัครสมาชิก</button>
+
+      <p class="register-link">มีบัญชีอยู่แล้ว? <a href="login.html">เข้าสู่ระบบ</a></p>
+
+      <div style="text-align: center; margin: 20px 0; color: #a97c50; font-family: 'Kanit', sans-serif;">
+        หรือ
+      </div>
+
+      <div class="oauth-buttons">
+  <button type="button" class="oauth-btn">
+    <img src="../image/google.png" alt="Google" />
+    Google
+  </button>
+  <button type="button" class="oauth-btn">
+    <img src="../image/microsoft.png" alt="Microsoft" />
+    Microsoft
+  </button>
+</div>
+
+    </form>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

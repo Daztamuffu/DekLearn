@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DekLearn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <button onclick="rotateAndGo()" class="logo-btn">
+    <div class="circle-icon" id="logo-icon">
+      <img src="../image/Logo.png" alt="Logo" />
+    </div>
+  </button>
+
+  <div class="navbar">
+    <div class="navbar-left">
+      <button onclick="window.location.href='login.php'" class="login-btn">เข้าสู่ระบบ</button>
+      <a href="register.html" class="create-account">สร้างบัญชี</a>
+    </div>
+    <div class="navbar-right">
+      <a href="main.html" class="menu">หน้าหลัก</a>
+      <div class="separator">|</div>
+      <a href="topup.html" class="menu">เติมเงิน</a>
+      <div class="separator">|</div>
+      <a href="contact.html" class="menu">ติดต่อเรา</a>
+      <div class="separator">|</div>
+      <a href="about.html" class="menu">เกี่ยวกับเรา</a>
+    </div>
+  </div>
+
+  <div class="center-circle-container">
+    <button class="half-circle left-btn">
+      <span class="btn-text">สรุปชีท</span>
+    </button>
+    <button class="half-circle right-btn">
+      <span class="btn-text">ติวเตอร์</span>
+    </button>
+  </div>
+
+  <main class="main-container">
+    <section class="hero-section">
+      <h1 class="hero-title">ศูนย์รวมชีทสรุปที่ดีที่สุด!</h1>
+      <div class="search-box">
+        <input type="text" placeholder="ค้นหาวิชา, บทเรียน, ติวเตอร์..." class="search-input">
+        <button class="search-btn"></button>
+      </div>
+    </section>
+
+    <section class="category-wrapper">
+      <div class="category-card">
+
+        <span>คณิตศาสตร์</span>
+      </div>
+      <div class="category-card">
+
+        <span>วิทยาศาสตร์</span>
+      </div>
+      <div class="category-card">
+
+        <span>ภาษาไทย</span>
+      </div>
+      <div class="category-card">
+
+        <span>ภาษาอังกฤษ</span>
+      </div>
+        <div class="category-card">
+
+        <span>สังคมศึกษา</span>
+      </div>
+    </section>
+
+<section class="content-section">
+  <h2 class="section-label">ชีทแนะนำยอดนิยม</h2>
+  <div class="product-grid">
+    
+    <div class="product-card">
+      <div class="product-img"><img src="../image/Test.jpg" alt="Sheet"></div>
+      <div class="product-detail">
+        <p class="product-name">สรุปสูตรฟิสิกส์ ม.ปลาย</p>
+        <div class="product-footer">
+          <div class="buy-card">  
+              <span class="product-price">฿150</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img"><img src="../image/Test.jpg" alt="Sheet"></div>
+      <div class="product-detail">
+        <p class="product-name">สรุปเข้มเคมีอินทรีย์</p>
+        <div class="product-footer">
+          <div class="buy-card">
+            <span class="product-price">฿200</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img"><img src="../image/Test.jpg" alt="Sheet"></div>
+      <div class="product-detail">
+        <p class="product-name">สรุปภาษาไทย O-NET</p>
+        <div class="product-footer">
+          <div class="buy-card">
+            <span class="product-price">฿120</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img"><img src="../image/Test.jpg" alt="Sheet"></div>
+      <div class="product-detail">
+        <p class="product-name">เทคนิคคณิตศาสตร์ ม.ต้น</p>
+        <div class="product-footer">
+          <div class="buy-card">
+            <span class="product-price">฿180</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img"><img src="../image/Test.jpg" alt="Sheet"></div>
+      <div class="product-detail">
+        <p class="product-name">สรุปชีววิทยา: ระบบร่างกาย</p>
+        <div class="product-footer">
+          <div class="buy-card">
+            <span class="product-price">฿250</span>
+          </div>   
+        </div>
+      </div>
+    </div>
+
+</section>
+
+<section class="content-section">
+  <h2 class="section-label">ติวเตอร์เเนะนำ</h2>
+  <div class="tutor-grid">
+  <div class="tutor-card">
+    <div class="tutor-img-wrapper">
+      <img src="../image/human.png" alt="Tutor">
+    </div>
+    
+    <div class="tutor-detail">
+      <p class="tutor-name">Name Nana</p>
+      <span class="subject">วิชา: คณิตศาสตร์</span>
+      <p class="description">สรุปเทคนิคคิดเลขเร็ว เข้าใจง่าย สไตล์น่าน่า...</p>
+      <a href="#" class="details-btn">ดูรายละเอียด</a>
+    </div>
+  </div>
+  
+  </div>
+</section>
+
+
+  </main>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
